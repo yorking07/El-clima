@@ -1,0 +1,77 @@
+.weather{
+    width: 100%;
+    max-width: 350px;
+    background-color:rgba(255, 255,255, 0.4);
+    border-radius: 0.8em;
+    padding: 2em 1.5em 2.5em;
+
+}
+.weather__title{
+text-align: center;
+font-size: 1.5em;
+font-weight: 500;
+}
+.weather__location{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.weather__body{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+.weather__condition{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.weather__list{
+    display: grid;
+    gap: 0.3em;
+}
+.weather__item{
+display: grid;
+grid-template-columns: 5fr 3fr;
+}
+
+.weather__label{
+font-size: 0.9em;
+font-weight: 300;
+}
+
+.weather__value{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.weather__temp{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.weather__btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 0.6em 1.5em;
+    border-radius: 0.7em;
+    font-weight: 300;
+    background-color: rgb(226, 33, 194);
+    color: white;
+    filter: grayscale(0.5);
+    transition: transform 100ms ease,
+                box-shadow 100ms ease,
+                filter 100ms ease;
+}
+.weather__btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 0.7em black;
+    filter: grayscale(0);
+
+}
